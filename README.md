@@ -65,5 +65,9 @@ echo $app->hello();
 ```
 
 ##Change Log
+### 0.1.1 Forked from gonzalo123/yml2pimple
+Added the pimple container as the last argument
+
+
 ### 0.1.0 Forked from gonzalo123/yml2pimple
 Creating a release to have a stable version.

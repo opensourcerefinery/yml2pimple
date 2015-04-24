@@ -20,7 +20,7 @@ class ContainerBuilder
         }
 
         foreach ($conf['services'] as $serviceName => $serviceConf) {
-            $this->container[$serviceName] = function () use ($serviceConf) {
+            $this->container[$serviceName] = function ($c) use ($serviceConf) {
                 $class  = new \ReflectionClass($serviceConf->getClass());
                 $params = [];
                 foreach ((array)$serviceConf->getArguments() as $argument) {
