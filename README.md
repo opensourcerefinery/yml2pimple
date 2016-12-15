@@ -65,6 +65,11 @@ echo $app->hello();
 ```
 
 ##Change Log
+
+### 1.0.0
+
+* Just because its needed
+
 ### 0.1.1 Forked from gonzalo123/yml2pimple
 Added the pimple container as the last argument
 

@@ -21,14 +21,14 @@ class ContainerBuilder
 
         foreach ($conf['services'] as $serviceName => $serviceConf) {
             $this->container[$serviceName] = function ($c) use ($serviceConf) {
-                $class  = new \ReflectionClass($serviceConf->getClass());
+                $class = new \ReflectionClass($serviceConf->getClass());
                 $params = [];
-                foreach ((array)$serviceConf->getArguments() as $argument) {
+                foreach ((array) $serviceConf->getArguments() as $argument) {
                     $params[] = $this->decodeArgument($argument);
                 }
-				//Inject the container as a param
-				$params[] = $c;
-				
+                //Inject the container as a param
+                $params[] = $c;
+
                 return $class->newInstanceArgs($params);
             };
         }
