@@ -68,7 +68,7 @@ echo $app->hello();
 
 Yaml2Pimple is licensed under the MIT license.
 
-##Change Log
+## Change Log
 
 ### 1.0.0
 
