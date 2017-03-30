@@ -6,8 +6,8 @@ include __DIR__ . '/src/Curl.php';
 include __DIR__ . '/src/Proxy.php';
 
 use Pimple\Container;
-use G\Yaml2Pimple\ContainerBuilder;
-use G\Yaml2Pimple\YamlFileLoader;
+use OpenSourceRefinery\Yaml2Pimple\ContainerBuilder;
+use OpenSourceRefinery\Yaml2Pimple\YamlFileLoader;
 use Symfony\Component\Config\FileLocator;
 
 $container = new Container();

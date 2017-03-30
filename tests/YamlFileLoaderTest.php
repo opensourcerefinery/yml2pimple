@@ -1,6 +1,6 @@
 <?php
 
-use G\Yaml2Pimple\YamlFileLoader;
+use OpenSourceRefinery\Yaml2Pimple\YamlFileLoader;
 
 include_once __DIR__ . '/fixtures/App.php';
 include_once __DIR__ . '/fixtures/Curl.php';

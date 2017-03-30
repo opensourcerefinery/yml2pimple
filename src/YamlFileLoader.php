@@ -1,6 +1,6 @@
 <?php
 
-namespace G\Yaml2Pimple;
+namespace OpenSourceRefinery\Yaml2Pimple;
 
 use Symfony\Component\Config\FileLocatorInterface;
 use Symfony\Component\Config\Loader\Loader;
