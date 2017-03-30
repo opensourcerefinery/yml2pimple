@@ -64,7 +64,11 @@ $app = $container['App'];
 echo $app->hello();
 ```
 
-##Change Log
+## License
+
+Yaml2Pimple is licensed under the MIT license.
+
+## Change Log
 
 ### 1.0.0
 
