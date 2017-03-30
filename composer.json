@@ -1,5 +1,5 @@
 {
-    "name": "gonzalo123/yaml2pimple",
+    "name": "opensourcerefinery/yaml2pimple",
     "keywords": ["pimple", "dependency injection", "container"],
     "description": "Build a Pimple/Container from a config file",
     "license":"MIT",
@@ -7,17 +7,21 @@
         {
             "name": "Gonzalo Ayuso",
             "email": "gonzalo123@gmail.com"
+        },
+        {
+            "name": "Michael Koert",
+            "email": "mkoert@bluebikeproductions.com"
         }
     ],
     "autoload": {
         "psr-4": {
-            "G\\Yaml2Pimple\\": "src/"
+            "OpenSourceRefinery\\Yaml2Pimple\\": "src/"
         }
     },
     "require": {
-        "pimple/pimple": "3.0.*@dev",
-        "symfony/config": "2.6.*@dev",
-        "symfony/yaml": "2.6.*@dev"
+        "pimple/pimple": "~3.0",
+        "symfony/config": "~2.8",
+        "symfony/yaml": "~2.8"
     },
     "config": {
         "bin-dir": "bin/"

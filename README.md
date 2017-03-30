@@ -1,6 +1,6 @@
 Pimple/Container builder
 ======
-[![Build Status](https://travis-ci.org/gonzalo123/yml2pimple.svg?branch=master)](https://travis-ci.org/gonzalo123/yml2pimple)
+[![Build Status](https://travis-ci.org/opensourcerefinery/yml2pimple.svg?branch=master)](https://travis-ci.org/opensourcerefinery/yml2pimple)
 
 Simple tool build pimple containers from a configuration file
 
@@ -49,8 +49,8 @@ With this library we can create a pimple container from this yaml file (similar 
 
 ```php
 use Pimple\Container;
-use G\Yaml2Pimple\ContainerBuilder;
-use G\Yaml2Pimple\YamlFileLoader;
+use OpenSourceRefinery\Yaml2Pimple\ContainerBuilder;
+use OpenSourceRefinery\Yaml2Pimple\YamlFileLoader;
 use Symfony\Component\Config\FileLocator;
 
 $container = new Container();
@@ -70,9 +70,9 @@ echo $app->hello();
 
 * Just because its needed
 
-### 0.1.1 Forked from gonzalo123/yml2pimple
+### 0.1.1 Forked from opensourcerefinery/yml2pimple
 Added the pimple container as the last argument
 
 
-### 0.1.0 Forked from gonzalo123/yml2pimple
+### 0.1.0 Forked from opensourcerefinery/yml2pimple
 Creating a release to have a stable version.

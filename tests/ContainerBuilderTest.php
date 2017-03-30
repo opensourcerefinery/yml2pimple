@@ -1,6 +1,6 @@
 <?php
 
-use G\Yaml2Pimple\ContainerBuilder;
+use OpenSourceRefinery\Yaml2Pimple\ContainerBuilder;
 use Pimple\Container;
 
 include_once __DIR__ . '/fixtures/App.php';

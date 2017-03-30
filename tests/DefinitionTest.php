@@ -1,6 +1,6 @@
 <?php
 
-use G\Yaml2Pimple\Definition;
+use OpenSourceRefinery\Yaml2Pimple\Definition;
 
 class DefinitionTest extends \PHPUnit_Framework_TestCase
 {
