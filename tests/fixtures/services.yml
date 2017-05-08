@@ -4,7 +4,7 @@ parameters:
 services:
   App:
     class:     App
-    arguments: [@Proxy, %name%]
+    arguments: [@Proxy, %name%, &container]
   Proxy:
     class:     Proxy
     arguments: [@Curl]

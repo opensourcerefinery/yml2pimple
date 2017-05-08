@@ -26,8 +26,6 @@ class ContainerBuilder
                 foreach ((array) $serviceConf->getArguments() as $argument) {
                     $params[] = $this->decodeArgument($argument);
                 }
-                //Inject the container as a param
-                $params[] = $c;
 
                 return $class->newInstanceArgs($params);
             };
@@ -41,6 +39,8 @@ class ContainerBuilder
                 $value = $this->container[substr($value, 1)];
             } elseif (0 === strpos($value, '%')) {
                 $value = $this->container[substr($value, 1, -1)];
+            } elseif( 0 === strpos($value, '&container')) {
+                $value = $this->container;
             }
         }
 
