@@ -41,6 +41,8 @@ class ContainerBuilder
                 $value = $this->container[substr($value, 1)];
             } elseif (0 === strpos($value, '%')) {
                 $value = $this->container[substr($value, 1, -1)];
+            } elseif( 0 === strpos($value, '&container')) {
+                $value = $this->container;
             }
         }
 
