@@ -11,15 +11,15 @@ class ContainerBuilderTest extends \PHPUnit_Framework_TestCase
 {
     public function testBuilder()
     {
-        $definitionApp = $this->getMockBuilder('G\Yaml2Pimple\Definition')->disableOriginalConstructor()->getMock();
+        $definitionApp = $this->getMockBuilder('OpenSourceRefinery\Yaml2Pimple\Definition')->disableOriginalConstructor()->getMock();
         $definitionApp->expects($this->any())->method('getClass')->will($this->returnValue('App'));
-        $definitionApp->expects($this->any())->method('getArguments')->will($this->returnValue(['@Proxy', '%name%']));
+        $definitionApp->expects($this->any())->method('getArguments')->will($this->returnValue(['@Proxy', '%name%', '&container']));
 
-        $definitionProxy = $this->getMockBuilder('G\Yaml2Pimple\Definition')->disableOriginalConstructor()->getMock();
+        $definitionProxy = $this->getMockBuilder('OpenSourceRefinery\Yaml2Pimple\Definition')->disableOriginalConstructor()->getMock();
         $definitionProxy->expects($this->any())->method('getClass')->will($this->returnValue('Proxy'));
         $definitionProxy->expects($this->any())->method('getArguments')->will($this->returnValue(['@Curl']));
 
-        $definitionCurl = $this->getMockBuilder('G\Yaml2Pimple\Definition')->disableOriginalConstructor()->getMock();
+        $definitionCurl = $this->getMockBuilder('OpenSourceRefinery\Yaml2Pimple\Definition')->disableOriginalConstructor()->getMock();
         $definitionCurl->expects($this->any())->method('getClass')->will($this->returnValue('Curl'));
         $definitionCurl->expects($this->any())->method('getArguments')->will($this->returnValue(null));
 
