@@ -25,7 +25,7 @@ class YamlFileLoaderTest extends \PHPUnit_Framework_TestCase
             $this->assertInstanceOf('OpenSourceRefinery\Yaml2Pimple\Definition', $conf['services']['Proxy']);
 
             $this->assertEquals('App', $conf['services']['App']->getClass());
-            $this->assertEquals(['@Proxy', '%name%'], $conf['services']['App']->getArguments());
+            $this->assertEquals(['@Proxy', '%name%', '&container'], $conf['services']['App']->getArguments());
             $this->assertEquals('Curl', $conf['services']['Curl']->getClass());
             $this->assertEquals(null, $conf['services']['Curl']->getArguments());
             $this->assertEquals('Proxy', $conf['services']['Proxy']->getClass());

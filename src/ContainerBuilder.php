@@ -26,8 +26,6 @@ class ContainerBuilder
                 foreach ((array) $serviceConf->getArguments() as $argument) {
                     $params[] = $this->decodeArgument($argument);
                 }
-                //Inject the container as a param
-                $params[] = $c;
 
                 return $class->newInstanceArgs($params);
             };
